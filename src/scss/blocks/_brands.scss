@@ -1,0 +1,93 @@
+.brands {
+   background-image: linear-gradient(
+         to top,
+         rgba($light-color, 0.4) 0%,
+         rgba($light-color, 0.4)
+      ),
+      url(../images/fr2.jpg);
+   background-size: cover;
+   padding-top: 100px;
+   padding-bottom: 400px;
+}
+
+.brands__title {
+   text-align: center;
+}
+
+.brands__desc {
+   letter-spacing: -0.02em;
+   font-size: 20px;
+   line-height: 1.6;
+   font-weight: 300;
+   color: $white-color;
+   text-align: center;
+}
+
+.brands__info {
+   margin-top: 60px;
+}
+
+.brands-tabs {
+   @extend %list-reset;
+
+   display: flex;
+   justify-content: center;
+
+   position: relative;
+}
+
+.brands-tabs__item {
+   display: flex;
+   flex-grow: 1;
+}
+
+.brands-tabs__link {
+   flex-grow: 1;
+   padding: 20px 35px;
+   color: $white-color;
+   font-size: 56px;
+   text-align: center;
+   font-weight: 300;
+   border: 2px solid $white-color;
+
+   &--active {
+      background-color: $dark-color;
+      border-color: $dark-color;
+      color: $light-color;
+   }
+}
+
+.brands__tabs-content {
+   position: absolute;
+   left: 0;
+   right: 50px;
+   top: 100%;
+   display: none;
+   padding-top: 30px;
+   padding-bottom: 20px;
+
+   &--active {
+      display: block;
+      width: 100%;
+   }
+}
+.brand-content__desc {
+   color: #fff;
+   text-align: center;
+   font-size: 20px;
+}
+.brand-content__sublist {
+   display: flex;
+   justify-content: space-around;
+}
+.brand-cats__item {
+   @extend %list-reset;
+   color: #fff;
+   padding: 25px 40px;
+   border: 1px solid #fff;
+   width: max-content;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   font-size: 25px;
+   background-color: $light-color;
+}

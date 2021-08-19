@@ -1,0 +1,29 @@
+.page__footer {
+   background-color: $dark-color;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.footer__content {
+   display: flex;
+   justify-content: space-around;
+   padding-top: 50px;
+   line-height: 1.5;
+}
+.footer__content-adress {
+   color: $light-color;
+   width: 220px;
+}
+.footer__content-phones > a {
+   color: $light-color;
+   display: block;
+}
+.footer__content-mail {
+   color: $light-color;
+   width: 150px;
+}
+.footer__content-rights {
+   color: $light-color;
+   text-align: center;
+   margin-top: 50px;
+   font-size: 14px;
+}

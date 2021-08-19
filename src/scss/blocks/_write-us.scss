@@ -1,0 +1,30 @@
+.write-us {
+   background-image: linear-gradient(
+         to right,
+         transparent 0%,
+         rgba(#fff, 0.85) 70%
+      ),
+      url(../images/write-us-bgd.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.write-us__title {
+   text-align: center;
+   max-width: 60%;
+   text-align: center;
+   margin-left: auto;
+}
+
+.write-us__form {
+   max-width: 60%;
+   padding-left: 50px;
+   padding-right: 50px;
+   display: flex;
+   flex-direction: column;
+   margin-left: auto;
+}
+
+.write-us__form-submit {
+   margin-top: 40px;
+}
