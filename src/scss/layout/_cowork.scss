@@ -1,0 +1,72 @@
+.cowork {
+	padding-top: 120px;
+	padding-bottom: 175px;
+	background-color: rgb(26, 26, 26);
+
+	@include mq(1200) {
+		padding-top: 100px;
+		padding-bottom: 120px;
+	}
+
+	@include mq(992) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@include mq(576) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+.cowork__container {
+	display: grid;
+	grid-template-columns: 5fr 4fr;
+	column-gap: 140px;
+
+	@include mq(1200) {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 100px;
+	}
+
+	@include mq(992) {
+		grid-template-columns: 1fr;
+		row-gap: 40px;
+	}
+}
+
+.cowork__video-wrapper {
+	@include mq(992) {
+		order: 1;
+	}
+}
+
+.cowork__video {
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+}
+
+.cowork__content-title {
+	font-family: georgia, palatino, book antiqua, palatino linotype, serif;
+	letter-spacing: 0.1em;
+	@include fz(30, 24);
+	font-weight: 400;
+	line-height: 1.3em;
+	color: $light-color;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.cowork__text-content {
+	// padding: 50px;
+}
+
+.cowork__content-text {
+	font-family: "Open Sans", sans-serif;
+	color: $white-color;
+	letter-spacing: -0.02em;
+	@include fz(16, 14);
+	line-height: 1.6em;
+	font-weight: 300;
+}

@@ -1,5 +1,0 @@
-@mixin mediaQuery($width, $minmax) {
-   @media (#{$minmax}-width: $width) {
-      @content;
-   }
-}

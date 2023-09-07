@@ -1,0 +1,18 @@
+.about-company {
+	background-color: $light-color;
+}
+
+.about-company__title {
+	text-align: center;
+}
+
+.about-company__description {
+	@include fz(18, 16);
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: center;
+	color: $white-color;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
