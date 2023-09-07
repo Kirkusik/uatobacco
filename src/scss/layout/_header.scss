@@ -24,37 +24,45 @@
 }
 
 .logo {
-	display: flex;
-	align-items: center;
 	font-family: "Playfair Display", serif;
 	font-size: 20px;
 	color: $light-color;
+	position: relative;
+	min-height: 58px;
+	padding-left: 100px;
+	display: flex;
+	align-items: center;
 
 	@include mq(992) {
 		font-size: 16px;
-
-		& svg {
-			width: 70px;
-			height: auto;
-		}
+		padding-left: 80px;
+		min-height: 43px;
 	}
+
 	@include mq(480) {
-		font-size: 0;
+		padding-left: 60px;
 	}
 }
 
 .page__logo-img {
 	margin-right: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
 
 	@include mq(992) {
 		width: 70px;
 		height: auto;
 	}
+	@include mq(480) {
+		top: 6px;
+		width: 50px;
+	}
 }
 
 .menu-toggle {
-	width: 32px;
-	height: 32px;
+	// width: 40px;
+	// height: 40px;
 	border: none;
 	padding: 0;
 	background-color: transparent;
@@ -64,11 +72,32 @@
 
 	@include mq(768) {
 		display: flex;
+		position: relative;
+		z-index: 3;
 	}
 }
 
 .menu-toggle__icon {
-	fill: $light-color;
+	transform: rotate(-45deg);
+
+	&--active {
+		transform: rotate(0);
+
+		& .path {
+			transform-origin: center;
+			transition: transform 0.3s;
+
+			&:nth-child(2) {
+				display: none;
+			}
+			&:nth-child(3) {
+				transform: rotate(45deg) translateY(-170px);
+			}
+			&:nth-child(4) {
+				transform: rotate(-45deg) translateY(170px);
+			}
+		}
+	}
 }
 
 .menu {
@@ -80,14 +109,44 @@
 		display: none;
 
 		&--active {
-			position: absolute;
-			top: 100%;
+			position: fixed;
+			top: 0;
 			right: 0;
-			width: 200px;
-			background-color: $light-color;
+			width: 50vw;
+			height: 100dvh;
+			z-index: 2;
+			// background-color: $light-color;
 			display: flex;
 			flex-direction: column;
-			padding: 30px 20px;
+			padding: 100px 30px 30px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				background-image: linear-gradient(
+						0deg,
+						rgba(0, 0, 0, 0.5),
+						rgba(0, 0, 0, 0.5)
+					),
+					url(../images/mobile-menu-bgd.jpg);
+				background-size: cover;
+				opacity: 0.4;
+			}
+
+			&::after {
+				content: "";
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				background-color: rgba(0, 0, 0, 0.6);
+				z-index: -1;
+			}
 		}
 	}
 }
@@ -101,6 +160,16 @@
 
 		@include mq(768) {
 			margin-left: 0;
+		}
+	}
+
+	@include mq(768) {
+		position: relative;
+		z-index: 22;
+		justify-content: center;
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -118,7 +187,7 @@
 	}
 
 	@include mq(992) {
-		font-size: 16px;
+		font-size: 20px;
 	}
 	@include mq(768) {
 		color: #fff;

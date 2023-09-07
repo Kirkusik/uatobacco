@@ -34,7 +34,12 @@
 	// background-color: $dark-color;
 	// font-family: "Roboto", Arial, sans-serif;
 	// font-family: 'Open Sans', sans-serif;
+
+	&--w-overflow {
+		overflow: hidden;
+	}
 }
+
 %list-reset {
 	list-style: none;
 	padding: 0;
