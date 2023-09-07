@@ -1,56 +1,59 @@
 .page-header {
-   padding: 20px;
-   position: fixed;
-   left: 0;
-   top: 0;
-   width: 100%;
-   background-color: transparent;
-   transition: background-color 0.4s;
+	padding: 20px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: transparent;
+	transition: background-color 0.2s;
 
-   &--fixed {
-      background-color: $dark-color;
-   }
+	&--fixed {
+		background-color: $dark-color;
+	}
 }
 
 .page__nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo {
-   display: flex;
-   align-items: center;
-   font-size: 20px;
-   color: $light-color;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	color: $light-color;
 }
 
 .page__logo-img {
-   margin-right: 20px;
+	margin-right: 20px;
 }
 
 .menu {
-   @extend %list-reset;
+	@extend %list-reset;
 
-   display: flex;
+	display: flex;
 }
 
 .menu__item {
-   display: flex;
-   align-items: center;
+	display: flex;
+	align-items: center;
 
-   &:not(:first-child) {
-      margin-left: 30px;
-   }
+	&:not(:first-child) {
+		margin-left: 30px;
+	}
 }
 
 .menu__link {
-   font-size: 18px;
-   line-height: 22px;
-   color: $light-color;
-   transition: color 0.5s;
+	font-family: "Open Sans", sans-serif;
+	padding: 4px 6px;
+	font-size: 18px;
+	line-height: 22px;
+	color: $light-color;
+	transition: color 0.5s;
 
-   &:hover {
-      color: #fff;
-   }
+	&:hover {
+		color: #fff;
+	}
 }
