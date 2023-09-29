@@ -1,48 +1,105 @@
 <header class="page__header page-header">
-	<div class="container">
-		<nav class="page__nav">
-			<a href="#" class="page__logo logo" title="UKRAINE TOBACCO INC.">
-				<svg class="page__logo-img" width="94" height="58">
-					<use href="#logo" />
-				</svg>
-				UKRAINE TOBACCO INC.
-			</a>
+	<nav class="page__nav">
+		<a href="#" class="page__logo logo" title="UKRAINE TOBACCO INC.">
+			<svg class="page__logo-img" width="94" height="58">
+				<use href="#logo" />
+			</svg>
+			UKRAINE TOBACCO&nbsp;INC.
+		</a>
 
-			<button class="menu-toggle" type="button">
-				<svg
-					width="32"
-					height="32"
-					viewBox="0 0 688 405"
-					class="menu-toggle__icon"
-				>
-					<defs>
-						<style>
-							.path {
-								fill: none;
-								stroke: rgb(159, 143, 124);
-								stroke-linecap: round;
-								stroke-linejoin: round;
-								stroke-width: 48px;
-							}
-						</style>
-					</defs>
-					<path class="path" d="M24,209.35H664" />
-					<path class="path" d="M111.5,381h465" />
-					<path class="path" d="M111.5,24h465" />
-				</svg>
-			</button>
+		<button class="menu-toggle" type="button">
+			<svg
+				width="32"
+				height="32"
+				viewBox="0 0 688 405"
+				class="menu-toggle__icon"
+			>
+				<defs>
+					<style>
+						.path {
+							fill: none;
+							stroke: rgb(159, 143, 124);
+							stroke-linecap: round;
+							stroke-linejoin: round;
+							stroke-width: 48px;
+						}
+					</style>
+				</defs>
+				<path class="path" d="M24,209.35H664" />
+				<path class="path" d="M111.5,381h465" />
+				<path class="path" d="M111.5,24h465" />
+			</svg>
+		</button>
 
-			<ul class="page__menu menu">
-				<li class="menu__item">
-					<a href="#about-us" class="menu__link">Про нас</a>
-				</li>
-				<li class="menu__item">
-					<a href="#brands" class="menu__link">Бренди</a>
-				</li>
-				<li class="menu__item">
-					<a href="#contacts" class="menu__link">Зв'язок</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
+		<div class="menu-wrapper">
+			<div class="menu-wrapper-content">
+				<ul class="page__menu menu">
+					<li class="menu__item">
+						<a href="#about-us" class="menu__link">Про нас</a>
+					</li>
+					<li class="menu__item">
+						<a href="#brands" class="menu__link">Бренди</a>
+					</li>
+					<li class="menu__item">
+						<a href="#contacts" class="menu__link">Зв'язок</a>
+					</li>
+				</ul>
+
+				<ul class="lang-switcher">
+					<li
+						class="lang-item lang-item-2 lang-item-en current-lang lang-item-first"
+					>
+						<a lang="en" hreflang="en" href="https://uatobaccoinc.com/en/"
+							><img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII="
+								alt="English"
+								width="16"
+								height="11"
+								style="width: 16px; height: 11px"
+						/></a>
+					</li>
+					<li class="lang-item lang-item-5 lang-item-uk">
+						<a lang="uk" hreflang="uk" href="https://uatobaccoinc.com/"
+							><img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAb1BMVEUAhP8AfP0Ac/oAZ/UAV/B5yv9wxv5iwf1WvP1Ot/gAQOlMt/1Bs/s1rfkpqPdBsfYdovUAkciK0edqwuBautpNtdZAr9IATZr43QD8/GX6+kn5+Tr4+C329iD09BTy8g309DHguQDy8iruzwDnwwAuoRPoAAAASElEQVR4AU3MAQYDQRAF0Ve9WRAQYO5/zUgSDIxf8DQdiGR3I7v0YOLS3ns4PPt8Wq86vn6vVht7NRzG0OHRSpDb8Gt5IvjAHy/kBL+aIRygAAAAAElFTkSuQmCC"
+								alt="Українська"
+								width="16"
+								height="11"
+								style="width: 16px; height: 11px"
+						/></a>
+					</li>
+				</ul>
+
+				<style>
+					.lang-switcher {
+						display: flex;
+						column-gap: 10px;
+						padding-left: 0;
+						margin: 0 0 0 20px;
+						list-style: none;
+					}
+
+					.lang-switcher a {
+						display: flex;
+					}
+
+					.lang-switcher .current-lang {
+						opacity: 0.6;
+					}
+
+					@media (max-width: 768px) {
+						.lang-switcher {
+							margin-right: 20px;
+							justify-content: center;
+						}
+
+						.lang-switcher img {
+							min-width: 24px;
+							height: auto !important;
+						}
+					}
+				</style>
+			</div>
+		</div>
+	</nav>
 </header>
